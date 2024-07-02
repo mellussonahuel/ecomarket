@@ -1,0 +1,17 @@
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid $secondary-green;
+  margin-bottom: 15px;
+  overflow: hidden;
+  min-height: 250px;
+  .card-header {
+      background: white;
+      font-weight: 600;
+  }
+
+  .head{
+    display: flex;
+    justify-content:space-between;
+  }
+}

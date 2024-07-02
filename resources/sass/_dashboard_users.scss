@@ -1,0 +1,86 @@
+#dashboard-users {
+  .remove-term {
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  .vdp-datepicker__calendar {
+    top: -282px;
+  }
+}
+
+#users-details {
+  .card {
+    border-color: #dee2e6 #dee2e6 #f7f9fb;
+    border-top: none;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .span-error{
+    display: block;
+    .invalid-feedback {
+      display: block;
+    }
+  }
+
+  .card-body{
+    padding-top: 50px;
+  }
+
+  .invalid-feedback {
+    position: relative;
+    /* bottom: -16px; */
+  }
+
+  .nav-item {
+    cursor: pointer;
+
+    .nav-link {
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+#user-sale-list {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid $dark-blue;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    div {
+      padding-bottom: 10px;
+      color: $dark-blue;
+      text-align: center;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+  }
+}
+
+.user-sale-list-item {
+  display: flex;
+  justify-content: space-around;
+
+  div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .items-container {
+    max-height: 300px;
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+}

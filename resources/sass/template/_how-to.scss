@@ -1,0 +1,167 @@
+#how-to {
+  .how-to-buy-step {
+    margin-top: 20px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+    line-height: 1.4em;
+   
+  }
+
+  .how-to-buy-step::before{
+      content: attr(data-number);
+      display: inline-block;
+      color: #6f6f6f;
+      border: 3px solid $primary-color;
+      border-radius: 50%;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 0.6em;
+      width: 38px;
+      text-align: center;
+      line-height: 1.4em;
+  }
+
+  .breadcrumb-section {
+    background-image: url(/img/how-to.png);
+    background-size: cover;
+    height: 200px;
+  }
+
+  .search-bar {
+    display: block;
+    margin-top: 20px;
+    background-image: url(/img/how-to-search-bar-mobile.PNG);
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .easy-buy {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+  }
+
+  .add-to-cart {
+    display: block;
+    margin-top: 20px;
+    background-image: url(/img/add-to-cart-mobile.png);
+    background-size: contain;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .click-on-product {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+  }
+
+  .how-to-cart {
+    display: block;
+    margin-top: 20px;
+    background-image: url(/img/how-to-cart-mobile.PNG);
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .check-cart {
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+  }
+
+  .register-and-finish {
+    margin-top: 40px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #6f6f6f;
+    text-align: center;
+  }
+
+  .thanks {
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #6f6f6f;
+    margin-bottom: 40px;
+  }
+
+  .how-to-register {
+    display: block;
+    margin-top: 20px;
+    background-image: url(/img/how-to-register-mobile.PNG);
+    background-size: contain;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+#payments-options {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .breadcrumb-section {
+    background-image: url(/img/payments.PNG);
+    background-size: cover;
+    height: 200px;
+  }
+
+  .options {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .options-list {
+    justify-content: center;
+    ul {
+      li {
+        color: #6f6f6f;
+        margin-top: 15px;
+        font-size: 30px;
+        line-height: 38px;
+        a {
+          color: $primary-color;
+          &:hover {
+            color: $secondary-green;
+          }
+        }
+      }
+    }
+  }
+}
+
+#ships {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .breadcrumb-section {
+    background-image: url(/img/ships.png);
+    background-size: cover;
+    height: 200px;
+  }
+
+  .options {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .options-list {
+    justify-content: center;
+    p {
+      margin-top: 15px;
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+}

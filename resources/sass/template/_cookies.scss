@@ -1,0 +1,54 @@
+#cookies-message {
+  position: fixed;
+  border: 2px solid $secondary-green;
+  font-size: 16px;
+  color: $secondary-green;
+  bottom: 20px;
+  width: 90%;
+  max-width: 460px;
+  padding: 40px;
+  margin: auto;
+  z-index: 10000;
+  border-radius: 20px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+
+  @media (min-width: 769px) {
+    position: fixed;
+    border: 2px solid $secondary-green;
+    font-size: 16px;
+    color: $secondary-green;
+    bottom: 20px;
+    width: 100%;
+    max-width: 460px;
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+    z-index: 10;
+    border-radius: 20px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+  }
+
+  .cookies-buttons{
+    display: flex;
+    flex-direction: column;
+    button{
+        margin-bottom: 10px;
+    }
+  }
+
+  .btn-default {
+    font-size: 14px;
+    color: $primary-color;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px 30px 12px;
+    background: $white;
+    border: none;
+    border: 1px solid $primary-color;
+  }
+}

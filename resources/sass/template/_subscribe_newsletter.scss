@@ -1,0 +1,33 @@
+#subscribe-newsletter{
+
+    .result{
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    margin-bottom: 30px;
+    .card {
+        margin-top: 30px;
+        .card-body{
+            display: flex;
+        }
+    }
+
+    .result-description{
+        p{
+            text-align: center;
+            font-size: 30px;
+            width: 100%;
+        }
+    }
+
+    .breadcrumb-section{
+        background-image: url(/img/result.png);
+        background-size: cover;
+        height: 200px;
+      }
+}

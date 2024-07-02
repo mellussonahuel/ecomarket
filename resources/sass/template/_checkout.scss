@@ -1,0 +1,458 @@
+/*---------------------
+  Checkout
+-----------------------*/
+.checkout {
+
+
+
+    .vs__search, .vs__search:focus{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        line-height: 1.4;
+        font-size: 1em;
+        border: 1px solid transparent;
+        border-left: none;
+        outline: none;
+        margin: 4px 0 0 0;
+        padding: 0 7px;
+        background: none;
+        box-shadow: none;
+        width: 0;
+        max-width: 100%;
+        flex-grow: 1;
+        z-index: 1;
+        height: 40px;
+    }
+
+    .location-select-label{
+        margin-bottom: 19px;
+        span{
+            color : 1px solid $darker-gray;
+        }
+       
+    }
+
+    .shoping__discount{
+        .invalid-feedback{
+            bottom: -18px;
+        }
+    }
+   
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    .calendar{
+        .cell{
+            
+            &:hover{
+                border-color: $secondary-green;
+            }
+
+            &.selected{
+                background: $secondary-green;
+                color: $white;
+                &:hover{
+                    color:$white;
+                    background-color: $secondary-green;
+                    opacity: 0.9;
+                }
+            }
+        }
+             
+    }
+
+    h6 {
+        color: #999999;
+        text-align: center;
+        background: $background;
+        border-top: 1px solid #6AB963;
+        padding: 12px 0 12px;
+        margin-bottom: 75px;
+
+        span {
+            font-size: 16px;
+            color: #6AB963;
+            margin-right: 5px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: #999999;
+        }
+    }
+
+    
+}
+
+.how-to-link{
+    color:$primary-color !important;
+    &:hover{
+        $color: $secondary-green !important;
+    }
+}
+
+#payment_type_options{
+    .custom-check {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    
+        /* Hide the browser's default checkbox */
+        input[type=checkbox] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+    
+        /* Create a custom checkbox */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #fff;
+            border: 1px solid #E1E6EB;
+        }
+    
+        /* On mouse-over, add a grey background color */
+        &:hover input ~ .checkmark {
+            background-color: #ffffff;
+        }
+    
+        /* When the checkbox is checked, add a blue background */
+        input:checked ~ .checkmark {
+            background-color: #ffffff;
+            border: 1px solid #E1E6EB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: url('data:image/svg+xml;charset=UTF-8, <svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="latest-from-careems-1.0(messages)" transform="translate(-326.000000, -546.000000)" fill="#0B97B7" fill-rule="nonzero"> <g id="tick-inside-circle" transform="translate(326.000000, 546.000000)"> <polygon id="Shape" points="1.97807018 5.1245614 0.75 6.35263158 4.69736842 10.3 13.4692982 1.52807018 12.2412281 0.3 4.69736842 7.84385965"></polygon> </g> </g> </g> </svg>');
+            position: absolute;
+            display: none;
+        }
+    
+        /* Show the checkmark when checked */
+        input:checked ~ .checkmark:after {
+            display: block;
+        }
+    
+    }
+    
+    //custom radio
+    .custom-radio {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 12px;
+     
+      
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    
+        /* Hide the browser's default radio button */
+         input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+    
+        /* Create a custom radio button */
+        .checkmark {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #fff;
+            border: 1px solid #E1E6EB;
+            border-radius: 50%;
+    
+            /* Create the indicator (the dot/circle - hidden when not checked) */
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        }
+    
+        /* On mouse-over, add a grey background color */
+        &:hover input ~ .checkmark {
+            background-color: #fff;
+            border: 1px solid $secondary-green;
+        }
+    
+        /* When the radio button is checked, add a blue background */
+         input:checked ~ .checkmark {
+            background-color: #fff;
+             border: 1px solid $secondary-green;
+        }
+    
+        /* Show the indicator (dot/circle) when checked */
+         input:checked ~ .checkmark:after {
+            display: block;
+        }
+    
+        /* Style the indicator (dot/circle) */
+        .checkmark:after {
+            top: 4px;
+            left: 4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $secondary-green;
+        }
+    }
+    .form-check{
+       padding-left: 0px !important;
+    }
+}
+
+
+.checkout__form {
+
+    h4 {
+        color: $normal-color;
+        font-weight: 700;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        column-rule: #b2b2b2;
+    }
+}
+
+.checkout__input {
+    margin-bottom: 24px;
+
+    p {
+        color: $normal-color;
+        margin-bottom: 20px;
+
+        span {
+            color: #dd2222;
+        }
+    }
+
+    input {
+        width: 100%;
+        height: 46px;
+        border: 1px solid $border;
+        padding-left: 20px;
+        font-size: 16px;
+        color: #b2b2b2;
+        border-radius: 4px;
+
+        &.checkout__input__add {
+            margin-bottom: 20px;
+        }
+
+        &::placeholder {
+            color: #b2b2b2;
+        }
+    }
+}
+
+.checkout__input__checkbox {
+    margin-bottom: 10px;
+
+    label {
+        position: relative;
+        font-size: 16px;
+        color: $normal-color;
+        padding-left: 40px;
+        cursor: pointer;
+
+        input {
+            position: absolute;
+            visibility: hidden;
+
+            &:checked {
+
+                &~.checkmark {
+                    background: $primary-color;
+                    border-color: $primary-color;
+
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .checkmark {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            height: 16px;
+            width: 14px;
+            border: 1px solid #a6a6a6;
+            content: '';
+            border-radius: 4px;
+
+            &:after {
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                width: 10px;
+                height: 8px;
+                border: solid white;
+                border-width: 3px 3px 0px 0px;
+                -webkit-transform: rotate(127deg);
+                -ms-transform: rotate(127deg);
+                transform: rotate(127deg);
+                content: '';
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.checkout__order {
+    background: $background;
+    padding: 40px;
+    padding-top: 30px;
+
+    .checkout-product-item{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h4 {
+        color: $normal-color;
+        font-weight: 700;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .checkout__order__products {
+        font-size: 18px;
+        color: $normal-color;
+        font-weight: 700;
+        margin-bottom: 10px;
+
+        span {
+            float: right;
+        }
+    }
+
+    ul {
+        margin-bottom: 12px;
+
+        li {
+            font-size: 16px;
+            color: $para-color;
+            line-height: 40px;
+            list-style: none;
+
+            span {
+                font-weight: 700;
+                float: right;
+            }
+        }
+    }
+
+    .checkout__order__subtotal {
+        font-size: 18px;
+        color: $normal-color;
+        font-weight: 700;
+        border-bottom: 1px solid #e1e1e1;
+        border-top: 1px solid #e1e1e1;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        padding-top: 15px;
+
+        span {
+            float: right;
+        }
+    }
+
+    .checkout__order__discount {
+        font-size: 18px;
+        color: $normal-color;
+        font-weight: 700;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        padding-top: 15px;
+
+        span {
+            float: right;
+        }
+    }
+
+    .checkout__input__checkbox {
+
+        label {
+            padding-left: 20px;
+        }
+    }
+
+    .checkout__order__total {
+        font-size: 18px;
+        color: $normal-color;
+        font-weight: 700;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+
+        span {
+            float: right;
+            color: #dd2222;
+        }
+    }
+
+    button {
+        font-size: 18px;
+        letter-spacing: 2px;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+// payment result
+
+#payment-result{
+    margin-bottom: 30px;
+    .card {
+        margin-top: 30px;
+        .card-body{
+            display: flex;
+        }
+    }
+
+    .result-description{
+        p{
+            text-align: center;
+            font-size: 30px;
+            width: 100%;
+        }
+    }
+
+    .breadcrumb-section{
+        background-image: url(/img/result.png);
+        background-size: cover;
+        height: 200px;
+      }
+}

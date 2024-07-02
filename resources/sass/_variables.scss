@@ -1,0 +1,104 @@
+// // Body
+$body-bg: #f7f9fb;
+
+// Cards
+$card-spacer-x: 0.9375rem;
+$card-spacer-y: 0.625rem;
+$card-cap-bg: #fbfbfb;
+$card-border-color: #e8eced;
+
+// Borders
+$border-radius: .125rem;
+$border-radius-lg: .2rem;
+$border-radius-sm: .15rem;
+
+// Nav Pills
+$nav-pills-border-radius: 0;
+
+
+
+// waitom
+
+// // Body
+$body-bg: #f7f9fb;
+
+// Cards
+$card-spacer-x: 0.9375rem;
+$card-spacer-y: 0.625rem;
+$card-cap-bg: #fbfbfb;
+$card-border-color: #e8eced;
+
+// Borders
+$border-radius: .125rem;
+$border-radius-lg: .2rem;
+$border-radius-sm: .15rem;
+
+// Nav Pills
+$nav-pills-border-radius: 0;
+
+/* Bootstrap media queries */
+$screen-xs-min: 0px;
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+$screen-xs-max: 575.98px;
+$screen-sm-max: 767.98px;
+$screen-md-max: 991.98px;
+$screen-lg-max: 1199.98px;
+$screen-xl-max: 3000px;
+
+// Colors // TO BE REMOVED
+
+$primary-background: #7E72F2;
+$secondary-background: #484b4f;
+$primary-font-color: #484b4f;
+$secondary-front-color: #7E72F2;
+// DONT USE ABOVE THIS
+
+
+/**
+  App colors/. USE THOSE PLEASE!!!!
+ */
+$white: white;
+$black : #000000;
+$super-lighter-gray: #f5f5f5;
+$lighter-gray: #e9e9e9;
+$light-gray: #bcbcbc;
+$gray: #9e9e9e;
+$dark-gray:#90949C;
+$darker-gray: #6f6f6f;
+
+$dark-blue: #003A74;
+$light-blue: #2D7BA2;
+$lighter-blue:#D5E1E6;
+$lighter-blue2:#F6FAFD;
+
+$light: #F4F7FB;
+$cyan: #A4EFEC ;
+$orange: #fc5961;
+
+
+
+$hard-text: #242A39;
+$light-text: #7D92A3;
+
+$primary:#003A74;
+
+$success:#28a745;
+
+
+$secondary-green : #12a462;
+$primary-green : #008037;
+
+
+$vs-state-active-bg: $secondary-green !default;
+$vs-state-active-color:$white !default;
+
+$vs-colors: (
+        lightest: rgba(60, 60, 60, 0.26),
+        light: rgba(60, 60, 60, 0.5),
+        dark: #333,
+        darkest: rgba(0, 0, 0, .15),
+        white: #fff
+) !default;

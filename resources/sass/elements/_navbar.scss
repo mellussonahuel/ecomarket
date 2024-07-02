@@ -1,0 +1,124 @@
+.navbar {
+  font-weight: 600;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  .dropdown-menu {
+    border: none;
+    margin-top: .5rem;
+    border-top: 1px solid #f2f2f2 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+  }
+}
+
+.nav-link {
+  .svg-inline--fa {
+    font-size: 1.4rem;
+  }
+}
+
+#nav-categories{
+  
+  #categories{
+    background-color: $white;
+  }
+
+  #categories-list{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    min-width: 260px;
+    z-index: 20;
+    padding-left: 0px;
+    
+    .category-item{
+      cursor:pointer;
+      display: block;
+      min-height: 50px;
+      width: 100%;
+      cursor: pointer;
+      span{
+        padding-left: 10px;
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        line-height: 50px;
+        i{
+          position:absolute;
+          right: 10px;
+          top: 8px;
+          z-index: 9999;
+          color: $secondary-green;
+          cursor: pointer;
+          font-size:30px;
+        }
+      }
+
+     
+      .sub-item-description{
+        width: 90%;
+        float: right;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      
+     
+      &:hover{
+        background-color: $secondary-green;
+        i{
+          color:$white
+        }
+        span{
+          color:$white
+
+        }
+      }
+    }
+
+    .child-list{
+      position: relative;
+    }
+
+    .child-item{
+
+    }
+
+    padding-left: 0px;
+    li{
+      
+      position: relative;
+      i{
+        position:absolute;
+        right: 10px;
+        top: 8px;
+        z-index: 9999;
+        color: $secondary-green;
+        cursor: pointer;
+        font-size:30px;
+      }
+      &:hover{
+        background-color: $primary-color;
+        a{
+          color:$white;
+        }
+        i{
+          color:$white
+        }
+      }
+    }
+  
+    .active{
+      background-color: $primary-color;
+      a{
+        color:$white;
+      }
+    }
+  
+    
+  }
+}
+
+

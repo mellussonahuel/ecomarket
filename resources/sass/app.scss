@@ -1,0 +1,59 @@
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~sweetalert2/src/sweetalert2';
+@import './../css/icons-font-awesome.min.css';
+@import '~vue-multiselect/dist/vue-multiselect.min.css';
+@import '~vue-select/src/scss/vue-select.scss';
+
+
+
+
+// template
+@import "template/variable";
+@import "template/mixins";
+
+@import 'mixins';
+@import "template/about";
+@import "template/base";
+@import "template/header";
+@import "template/hero";
+@import "template/home-page";
+@import "template/breadcrumb";
+@import "template/sidebar";
+@import "template/shop-grid";
+@import "template/shop-details";
+@import "template/shoping-cart";
+@import "template/checkout";
+@import "template/blog";
+@import "template/blog-sidebar";
+@import "template/blog-details";
+@import "template/footer";
+@import "template/contact";
+@import "template/how-to";
+@import "template/responsive";
+@import "template/cookies";
+@import "template/subscribe_newsletter";
+
+@import 'transitions';
+
+@import 'auth/auth';
+
+// elements 
+@import 'elements/card';
+@import 'elements/navbar';
+@import 'elements/buttons';
+@import 'elements/transitions';
+@import 'elements/modal';
+@import 'elements/sidebar_menu';
+
+// dashboard
+@import 'dashboard';
+@import 'dashboard_settings';
+@import 'dashboard_products';
+@import 'dashboard_users';
+@import 'dashboard_sales';
+
+
+// website
+
+@import 'product_details';

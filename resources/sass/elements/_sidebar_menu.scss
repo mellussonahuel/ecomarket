@@ -1,0 +1,215 @@
+#burger{
+    .hidden {
+        visibility: hidden;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    /* remove blue outline */
+    button:focus {
+        outline: 0;
+    }
+
+    .burger-button {
+        position: relative;
+        height: 30px;
+        width: 32px;
+        display: block;
+        z-index: 999;
+        border: 0;
+        border-radius: 0;
+        background-color: transparent;
+        pointer-events: all;
+        transition: transform .6s cubic-bezier(.165,.84,.44,1);
+    }
+
+    .burger-bar {
+        background-color: #130f40;
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        left: 6px;
+        height: 2px;
+        width: auto;
+        margin-top: -1px;
+        transition: transform .6s cubic-bezier(.165,.84,.44,1),opacity .3s cubic-bezier(.165,.84,.44,1),background-color .6s cubic-bezier(.165,.84,.44,1);
+    }
+
+    .burger-bar--1 {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+
+    .burger-bar--2 {
+        transform-origin: 100% 50%;
+        transform: scaleX(.8);
+    }
+
+    .burger-button:hover .burger-bar--2 {
+        transform: scaleX(1);
+    }
+
+    .no-touchevents .burger-bar--2:hover {
+        transform: scaleX(1);
+    }
+
+    .burger-bar--3 {
+        transform: translateY(6px);
+    }
+
+    #burger.active .burger-button {
+        transform: rotate(-180deg);
+    }
+
+    #burger.active .burger-bar {
+        background-color: #fff;
+    }
+
+    #burger.active .burger-bar--1 {
+        transform: rotate(45deg)
+    }
+
+    #burger.active .burger-bar--2 {
+        opacity: 0;
+    }
+
+    #burger.active .burger-bar--3 {
+        transform: rotate(-45deg)
+    }
+}
+
+
+
+#sidebar-menu{
+
+    .sidebar-auth{
+        background-color: $secondary-green;
+        height: 40px;
+
+        .header__top__right__auth a {
+            display: block;
+            font-size: 15px;
+            color: white;
+            line-height: 40px;
+            padding-right: 5px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .user-login{
+            border-right: 1px solid $white;
+        }
+
+        .user-register{
+            border-left: 1px solid $white;
+        }
+        
+    }
+
+    .sidebar-logo{
+        width: 185px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .sidebar-social{
+        a{
+            color:$secondary-green;
+            color: #12a462;
+            padding-right: 15px;
+            font-size: 18px;
+
+        }
+    }
+
+    .close{
+        position: relative;
+        i{
+            float: right;
+            color:$secondary-green; 
+        }
+        
+    }
+
+    .sidebar-contact{
+        li{
+            display: flex;
+            color: $secondary-green; 
+            i{
+                padding-right: 6px;
+                padding-top: 5px;
+            }
+        }
+    }
+
+    .pages{
+
+        width: 100%;
+        margin-top: 20px;
+        
+        ul{
+            margin:20px;
+            li{
+                border-bottom:1px solid #e1e1e1 ;
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                a{
+                    color: #1c1c1c;
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin: 0;
+                    font-family: "Cairo", sans-serif;
+                    -webkit-font-smoothing: antialiased;
+                    width: 100%;
+                }
+                &.active{
+                    a{
+                        color: $secondary-green;
+                    }
+                    
+                }
+            }
+        }
+
+        
+    }
+
+    .slide-enter-active,
+    .slide-leave-active
+    {
+        transition: transform 0.2s ease;
+    }
+
+    .slide-enter,
+    .slide-leave-to {
+        transform: translateX(-100%);
+        transition: all 150ms ease-in 0s
+    }
+
+    .sidebar-backdrop {
+        background-color: rgba(0,0,0,.5);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+
+    .sidebar-panel {
+        overflow-y: auto;
+        background-color: $white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 999;
+        padding: 1rem 20px 2rem 20px;
+        width: 300px;
+    }
+}

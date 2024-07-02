@@ -1,0 +1,145 @@
+#dashboard-settings {
+    #order-categories{
+        .item{
+            width: 100%;
+            padding: 10px;
+            border-bottom: 1px solid $dark-blue;
+            cursor:pointer;
+
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+
+        .fad{
+            color: $dark-blue
+        }
+    }
+
+    .invalid-feedback {
+        position: relative;
+        /* bottom: -16px; */
+      }
+      
+    .load-spinner{
+        color:$secondary-green;
+        font-size: 30px;
+    }
+
+    .settings-card {
+        .card-body {
+            padding: 0;
+            .nav-item {
+                .nav-link {
+                    color: $dark-blue;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 12px;
+                    border-bottom: 1px solid $primary-color;
+                    border-radius: 0;
+                    &.active {
+                        background: $lighter-gray;
+                    }
+                }
+                &:last-child {
+                    .nav-link {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+    label {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    small {
+        display: block;
+        font-size: 11px;
+        color: $light-text;
+        margin-bottom: 10px;
+    }
+
+    .card#language-settings {
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+    }
+
+    .card#notifications-settings {
+
+    }
+
+    #dashboard-settings-categories{
+        .table tbody td,th{
+            text-align: center;
+        }
+        
+        .table{
+            .fa-check{
+                color: $success;
+            }
+
+            .fa-times{
+                color : $orange;
+            }
+        }
+    }
+
+    #category-form{
+        .loaded-images{
+            position: relative;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .delete-image{
+            position: absolute;
+            top: 10px;
+            right: 80px;
+        }
+    }
+}
+
+#coupons-form{
+    .invalid-feedback{
+        bottom: -18px;
+    }
+    
+    .user-validated{
+        position: relative;
+        display: block;
+        .fad{
+            position: absolute;
+            top: 5px;
+            //transform: translateY(-50%);
+            left: 0px;
+        }
+        .fa-check{    
+            color:$secondary-green;
+        }
+
+        .fa-times{
+            color: $orange;
+        }
+    }
+
+    .search-user-group{
+        display: flex;
+        
+        input{
+            flex:3;
+        }
+        button{
+            flex:2;
+            max-width: 200px;
+            margin-left: 20px;
+        }
+        
+    }
+}
